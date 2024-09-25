@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Days of the Week</title>
+</head>
+<body>
+    <form method="post">
+        <button name="day" value="Monday">Monday</button>
+        <button name="day" value="Tuesday">Tuesday</button>
+        <button name="day" value="Wednesday">Wednesday</button>
+        <button name="day" value="Thursday">Thursday</button>
+        <button name="day" value="Friday">Friday</button>
+    </form>
+
+    <h2>
+        <?php
+            if (isset($_POST['day'])) {
+                echo "Today is " . htmlspecialchars($_POST['day']);
+            }
+        ?>
+    </h2>
+</body>
+</html>
